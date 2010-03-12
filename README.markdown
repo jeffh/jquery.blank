@@ -17,7 +17,7 @@ Simpliest usage:
 Documentation
 =============
 
-Only on function is added.
+Only one function is added.
 
 `jQuery.fn.blank([default_text[, options]]);`
 
