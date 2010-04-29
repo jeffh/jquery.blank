@@ -34,6 +34,11 @@
 			$('input[name=myinput5]').blank('Focus is blank until type', {
 				defaultUntilType: true
 			});
+			// password fields
+			$('input[name=myinput6]').blank('Enter your password');
+			$('input[name=myinput7]').blank('Enter your password', {
+				defaultUntilType: true
+			});
 		 });
 		// ]]>
 		</script>
@@ -45,8 +50,11 @@
 			<p>+ Custom normal style:<input type="text" name="myinput3" value="" /></p>
 			<p>Read blank:<input type="text" name="myinput4" value="" /></p>
 			<p>+ Focus blank:<input type="text" name="myinput5" value="" /></p>
+			<p>Password field:<input type="password" name="myinput6" value="" /></p>
+			<p>+ Focus blank:<input type="password" name="myinput7" value="" /></p>
 			<p>
 				<input type="submit" name="submit" value="Submit" />
+				<input type="reset" name="reset" value="Reset" />
 
 			</p>
 		</form>

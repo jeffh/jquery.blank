@@ -1,0 +1,22 @@
+Changelog:
+
+TODO:
+ o Refactor code
+
+--- Version 1.4
+ o Rudimentary fix for not allowing home/end the defaultText (with defaultUntilType)
+ o Added password field support (by Ashish Datta)
+ o Fixed blank value not set on page reload (by Ashish Datta)
+ o Fixed blank value not set on form reset
+ o Fixed blank value being selected when tab-focused under defaultUntilType.
+ o Code formatting fixes
+ o Added two events: 'blank' and 'fill', which are used for password fields
+
+--- Version 1.3
+ o Refactored code
+ o Changed onsubmit behavior for blank text to be empty string
+   (credits: Ashish - ashish@setfive.com)
+
+--- Version 1.2
+ o Created changelog
+ o Fixed indexof bug for IE (reported by Sherri Alexander)
