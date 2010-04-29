@@ -1,4 +1,4 @@
-/** jquery.blank ver. 1.3 - JQuery Plugin
+/** jquery.blank ver. 1.4 - JQuery Plugin
  * =============
  * Credits:
  *  o Ashish - ashish@setfive.com
