@@ -1,6 +1,16 @@
 JQuery Blank
 ============
 
+Credits
+--------
+
+ *  o Jeff Hui - jeffhui.net
+ *  o Ashish - ashish@setfive.com
+ *  o Sherri Alexander - sherri-alexander.com
+
+About
+--------
+
 JQuery Blank is a simple way to create default values for text fields and textareas
 which hints to the user what should be filled into the field.
  
@@ -41,6 +51,14 @@ Example usage:
 	  }
 	  return true;
 	});
+
+Events
+==========
+
+Since version 1.4, two events exist for jquery.blank elements. They can be hooked using `$.bind('<trigger-name>', function(){});`
+
+* `blank`: This is called when the text field is set to blank. For *defaultUntilType* enabled fields, this is on keyup, and onblur for other text fields.
+* `fill`: This is called when the text field is filled by user input. For *defaultUntilType* enabled fields, this is on keydown, and onblur for other text fields.
 
 [1]: http://me.com/ "Apple's Mobile Me"
 [2]: http://demo.jeffhui.net/jquery-blank/ "Example of JQuery.Blank"

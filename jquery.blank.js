@@ -1,45 +1,9 @@
 /** jquery.blank ver. 1.4 - JQuery Plugin
  * =============
  * Credits:
+ *  o Jeff Hui - jeffhui.net
  *  o Ashish - ashish@setfive.com
  *  o Sherri Alexander - sherri-alexander.com
- * =============
- * Changelog: See changelog file
- * =============
- * Examples:
- *    $('#id').blank('default text');
- *    $('#id').blank('default text', {defaultCSS: '#eee'});
- *    $('#id').blank(); // returns true if default blank text is being displayed
- * =============
- * Implements default text for text fields when disappear when the user focuses the element.
- *
- * Options:
- *	defaultCSS:       CSS styling when the textbox is displaying its default text. This can
- *	                  be either an object hash or a function that returns a object hash. This
- *	                  value is directly passed to jquery's css method.
- *	                  Defaults to {color: '#999'}.
- *	defaultFocusCSS:  Identical to defaultCSS, but this is used when the user focuses the
- *	                  text input but has not typed anything yet. This is only used when
- *	                  defaultUntilType is set to true.
- *	                  Defaults to {color: '#bbb'}.
- *	normalCSS:        Identical for defaultCSS except it applies to the CSS styling for when
- *	                  the user enters text into the input box.
- *	                  Defaults to a function which looks into a merged hash of both
- *	                  defaultCSS and defaultFocusCSS for css properties that were set and
- *	                  gets the computated style when this jquery.blank is called.
- *	defaultUntilType: Sets the default text to display when the user focuses on the text
- *	                  input but does not highlight anything. Refer to Apple's me.com for a
- *	                  similar kind of effect with the login textboxes.
- *	                  Defaults to false.
- * =============
- * jquery.blank adds the following events for the elements that have .blank(text, options)
- * called upon them.
- *
- * Events:
- *  blank:            This is called when the text becomes blank. This behavior is triggered
- *                    onkeyup if defaultUntilType is true and onblur otherwise.
- *  fill:             This is called when the text field becomes filled by user input. This
- *	                  is triggered onkeydown if defaultUntilType is true and onblur otherwise.
  * =============
  * Copyright (c) 2009 Jeff Hui <contrib@jeffhui.net>
  * 
