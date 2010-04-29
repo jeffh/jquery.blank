@@ -4,9 +4,9 @@ JQuery Blank
 Credits
 --------
 
- *  o Jeff Hui - jeffhui.net
- *  o Ashish - ashish@setfive.com
- *  o Sherri Alexander - sherri-alexander.com
+ * Jeff Hui - jeffhui.net
+ * Ashish - ashish@setfive.com
+ * Sherri Alexander - sherri-alexander.com
 
 About
 --------
