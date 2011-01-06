@@ -3,6 +3,17 @@ Changelog:
 TODO:
  o Refactor code
 
+--- Version 1.5
+ o Fixed $.fn.blank() returning True if the user submitted the form without leaving
+   the input field.
+ o Fixed $.fn.blank() from absorbing tabbing through input fields when defaultUntilType
+   is true.
+ o Support for HTML5 placeholder attribute by:
+   o jQuery.support.input_placeholder is true if the HTML5 placeholder attribute is
+     supported by the current browser
+   o Use $.blankify() to automatically call el.blank(el.attr('placeholder')) on all
+     input/textareas with the placeholder attributes.
+
 --- Version 1.4
  o Rudimentary fix for not allowing home/end the defaultText (with defaultUntilType)
  o Added password field support (by Ashish Datta)

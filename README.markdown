@@ -27,7 +27,12 @@ Simplest usage:
 Documentation
 =============
 
-Only one function is added.
+If you use [HTML5 placeholder][4] attribute for all your input elements, you can
+simply do:
+
+`$.blankify();`
+
+in the onready event. Only one other function is added:
 
 `jQuery.fn.blank([default_text[, options]]);`
 
@@ -51,6 +56,8 @@ Example usage:
 	  }
 	  return true;
 	});
+	
+[4]: http://davidwalsh.name/html5-placeholder
 
 Events
 ==========
