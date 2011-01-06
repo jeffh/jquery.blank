@@ -28,6 +28,10 @@
 					alert('input4 is empty!');
 				else
 					alert('input4 HAS user-entered data');
+				if($('[name=myinput5]').blank())
+					alert('input5 is empty!');
+				else
+					alert('input5 HAS user-entered data');
 				return false;
 			});
 			// blank until user types
@@ -39,6 +43,8 @@
 			$('input[name=myinput7]').blank('Enter your password', {
 				defaultUntilType: true
 			});
+			
+			$.blankify();
 		 });
 		// ]]>
 		</script>
@@ -52,6 +58,8 @@
 			<p>+ Focus blank:<input type="text" name="myinput5" value="" /></p>
 			<p>Password field:<input type="password" name="myinput6" value="" /></p>
 			<p>+ Focus blank:<input type="password" name="myinput7" value="" /></p>
+			<p>Html5 placeholder:<input type="text" name="myinput8" value="" placeholder="Blah" /></p>
+			<textarea placeholder="foor"></textarea>
 			<p>
 				<input type="submit" name="submit" value="Submit" />
 				<input type="reset" name="reset" value="Reset" />

@@ -87,6 +87,18 @@ function reset_caret(e, pos){
 	}
 }
 
+$.support.input_placeholder = 'placeholder' in document.createElement('input');
+
+
+var supported_elements = 'input[type=text], input[type=password], textarea';
+$.blankify = function(){
+	if(!$.support.input_placeholder){
+		$(supported_elements).each(function(){
+			var el = $(this);
+			el.blank(el.attr('placeholder'));
+		});
+	}
+}
 
 ////// main function //////
 // assume: the user knows this only should be used only with text-typing elements
@@ -118,7 +130,7 @@ $.fn.blank = function(text, options){
 
 	// function to work on each element we got
 	return this.each(function(){
-		if(!$(this).is('input[type=text], input[type=password], textarea'))
+		if(!$(this).is(supported_elements))
 		  return true; // continue
 
 		// css calls are in here, instead of out this call because
