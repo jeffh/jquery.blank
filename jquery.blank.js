@@ -241,8 +241,8 @@ $.fn.blank = function(text, options){
 				if(el.blank()){
 					el.val(v.substring(0, v.length-text.length))
 					.removeData('blank')
-					.css(normCSS);
-					el.trigger(fill_triggername);
+					.css(normCSS)
+					.trigger(fill_triggername);
 				}
 
 			}).keyup(function(){
