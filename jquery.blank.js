@@ -95,7 +95,7 @@ $.fn.blank = function(text, options){
 	// when we use $(el).blank() # returns a true/false if the input is actually blank
 	if(text === undefined){
 		var d = this.data('blank');
-		return (d !== undefined);
+		return d !== undefined;
 	}
 
 	// gather options
