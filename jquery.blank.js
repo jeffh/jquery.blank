@@ -239,17 +239,16 @@ $.fn.blank = function(text, options){
 				}
 				var v = el.val();
 				if(el.blank()){
-					el.val(v.substring(0, v.length-text.length)).removeData('blank')
+					el.val(v.substring(0, v.length-text.length))
+					.removeData('blank')
 					.css(normCSS);
 					el.trigger(fill_triggername);
 				}
 
 			}).keyup(function(){
 
-				var v = el.val();
-				if(!el.blank() && v === ''){
+				if(!el.blank() && el.val() === '')
 					el.data('blank', 1).css(defFocusCSS).trigger(blank_triggername);
-				}
 
 			}).blur();
 		} // if-else
