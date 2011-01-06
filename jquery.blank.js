@@ -195,7 +195,7 @@ $.fn.blank = function(text, options){
 		if(!opt.defaultUntilType){
 
 			el.blur(function(){
-				var isBlank = el.data('blank');
+				var isBlank = el.blank();
 				if($.trim(el.val()) === ''){
 					el.val(text).css(defCSS).data('blank', 1);
 					if(!isBlank)
@@ -214,7 +214,7 @@ $.fn.blank = function(text, options){
 
 			el.data('blank', 1);
 			el.blur(function(){
-				if(el.data('blank')){
+				if(el.blank()){
 					el.css(defCSS).val(text);
 				}
 			}).mouseup(function(){
