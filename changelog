@@ -5,7 +5,7 @@ TODO:
 
 --- Version 1.5
  o Fixed $.fn.blank() returning True if the user submitted the form without leaving
-   the input field.
+   the input field. (reported by Ashish Datta)
  o Fixed $.fn.blank() from absorbing tabbing through input fields when defaultUntilType
    is true.
  o Support for HTML5 placeholder attribute by:
