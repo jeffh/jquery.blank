@@ -25,7 +25,7 @@
 			$('input[name=myinput4]').blank('Test Blank on Submit');
 			$('form').submit(function(){
 				if($('[name=myinput4]').blank())
-					alert('input4 HAS NO user-entered data');
+					alert('input4 is empty!');
 				else
 					alert('input4 HAS user-entered data');
 				return false;
