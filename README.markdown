@@ -20,7 +20,7 @@ When the user focuses on the textbox, the search text is instantly removed and t
 user can then type something. If the user leaves the textbox and if the textbox is
  still empty, the default text is restored.
 
-Simpliest usage:
+Simplest usage:
 
 `$(myelement).blank('Search');`
 
