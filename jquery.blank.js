@@ -141,12 +141,10 @@ $.fn.blank = function(text, options){
 			el = $(this),
 			elBlankForm; // used by password fields only
 
-		// Ashish Datta ashish@setfive.com
 		// If the current text is blank text, wipe it since it might be a CTRL+R refresh
 		if(el.val() === text)
 			el.val('');
 
-		// request from: Ashish Datta ashish@setfive.com
 		// Password field support:
 		// We can't change the type=password attribute, so we have to use a new textfield
 		// that is swapped when we need to show default text.
@@ -182,7 +180,6 @@ $.fn.blank = function(text, options){
 			}
 		}
 
-		// ashish@setfive.com
 		// if the elements are inside a form, revert to blank text
 		el.closest('form').submit(function(){
 			if(el.blank())
