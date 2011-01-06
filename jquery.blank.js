@@ -233,7 +233,7 @@ $.fn.blank = function(text, options){
 			}).keydown(function(evt){
 
 				if($.inArray(evt.keyCode, ignoreList) !== -1){
-					if(el.blank() &&  $.inArray(evt.keyCode, moveList))
+					if(el.blank() && $.inArray(evt.keyCode, moveList))
 						setTimeout(function(){reset_caret(el.get(0))}, 1);
 					return true;
 				}
