@@ -205,9 +205,23 @@ $.fn.blank = function(text, options){
 					if(isBlank)
 						el.trigger(fill_triggername);
 				}
+				
 			}).focus(function(){
+				
 				if(el.blank())
 					el.val('').css(normCSS);
+					
+			// we need keyhooks incase the user presses enter.
+			}).keydown(function(evt){
+
+				if(el.blank() && evt.keyCode !== 13 && $.inArray(evt.keyCode, ignoreList) === -1)
+					el.removeData('blank').trigger(fill_triggername);
+
+			}).keyup(function(){
+
+				if(!el.blank() && el.val() === '')
+					el.data('blank', 1).trigger(blank_triggername);
+
 			}).blur();
 
 		} else { // opt.defaultUntilType
