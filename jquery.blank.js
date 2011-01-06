@@ -1,4 +1,4 @@
-/** jquery.blank ver. 1.4 - JQuery Plugin
+/** jquery.blank ver. 1.5 - JQuery Plugin
  * =============
  * Credits:
  *  o Jeff Hui - jeffhui.net
